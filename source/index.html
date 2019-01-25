@@ -6,7 +6,117 @@
   </head>
   <body>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Профессиональный HTML и CSS</a>», уровень 2.</p>
+    <header class="page-header">
+      <a class="page-header__logo" href="#">
+        <img class="page-header__logo-image" src="" width="86" height="35" alt="Логотип магазина Мишка">
+      </a>
+
+      <nav class="main-navigation">
+        <button class="main-navigation__toggle" type="button"></button>
+        <ul class="main-navigation__list site-navigation">
+          <li class="site-navigation__item">
+            <a href="#">Каталог товаров</a>
+          </li>
+          <li class="site-navigation__item">
+            <a href="#">Вязание на заказ</a>
+          </li>
+        </ul>
+        <a class="site-navigation__item" href="#">Поиск по сайту</a>
+        <ul class="main-navigation__list user-menu">
+          <li class="user-menu__item">
+            <a href="#">Корзина: пока пуста</a>
+          </li>
+        </ul>
+      </nav>
+
+    </header>
+
+    <main class="page-main">
+      <h1 class="page-header">Милые штуки ручной работы для дома</h1>
+      <ul class="categories-list">
+        <li class="categories-list__item">Предметы интерьера</li>
+        <li class="categories-list__item">Детские игрушки</li>
+      </ul>
+
+      <section class="featured-products">
+        <h2 class="visually-hidden">Избранные товары</h2>
+        <h3 class="featured-products__title">Вязаные корзинки</h3>
+        <b class="featured-products__badge">Товар недели</b>
+        <p class="featured-products__decription">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
+        <table class="featured-products__chars">
+          <tr>
+            <td class="featured-products__property-name">Цвет</td>
+            <td class="featured-products__property-value"><«Тиффани»/серый</td>
+          </tr>
+          <tr>
+            <td class="featured-products__property-name">Диаметр</td>
+            <td class="featured-products__property-value">25 см</td>
+          </tr>
+          <tr>
+            <td class="featured-products__property-name">Высота</td>
+            <td class="featured-products__property-value">15 см</td>
+          </tr>
+        </table>
+        <img src="" width="260" height="315" alt="Вязаные корзинки">
+        <p class="featured-products__price">Цена: 990 руб.</p>
+        <a href="#">Заказать</a>
+      </section>
+
+      <section class="about-us">
+        <h2 class="about-us__header">Коротко о нас:</h2>
+        <ul class="about-us__list">
+          <li class="about-us__item">Экологически чистые материалы</li>
+          <li class="about-us__item">Скандинавский стиль по российской цене</li>
+          <li class="about-us__item">Увеличивает лайки на фотографиях</li>
+          <li class="about-us__item">Связано вручную с любовью и умилением</li>
+          <li class="about-us__item">Поддержка отечественного производителя</li>
+          <li class="about-us__item">Поставляется в подарочной упаковке</li>
+        </ul>
+      </section>
+
+      <section class="reviews">
+        <h2 class="reviews__title">Отзывы</h2>
+        <blockquote>
+          <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
+          <cite class="reviews__author-name">Анастасия Красильникова</cite>
+          <cite class="reviews__author-link">@misssssiskras</cite>
+          @misssssiskras
+        </blockquote>
+        <button class="reviews__prev" type="button">Предыдущий отзыв</button>
+        <button class="reviews__next" type="button">Следующий отзыв</button>
+        <a class="reviews__write button" href="#">Написать</a>
+      </section>
+
+      <section class="contacts">
+        <h2 class="contacts__title">Контакты</h2>
+        <dl class="contacts__list">
+          <dt class="contacts__name">e-mail:</dt>
+          <dd class="contacts__name"><a href="mailto:info@mimimishkashop.ru"></a>info@mimimishkashop.ru</dd>
+          <dt class="contacts__name">адрес:</dt>
+          <dd class="contacts__name">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</dd>
+        </dl>
+        <img class="contacts__map" src="" alt="Карта с локацией магазина">
+        <a class="contacts__write button" href="#">Напишите нам</a>
+      </section>
+
+    </main>
+
+    <footer class="page-footer">
+      <ul class="social-list">
+        <li class="social__item">
+          <a class="social__link social__link--instagram" href="#">Instagram</a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--facebook" href="#">Facebook</a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--twitter" href="#">Twitter</a>
+        </li>
+      </ul>
+      <div class="copyright">
+        <p class="copyright__text">Разработано <span class="copyright__author">Евгений Шадрин</span></p>
+      </div>
+    </footer>
 
   </body>
 </html>
