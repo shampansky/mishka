@@ -9,69 +9,72 @@
 
     <header class="page-header">
       <a class="page-header__logo" href="#">
-        <img class="page-header__logo-image" src="" width="86" height="35" alt="Логотип магазина Мишка">
+        <img class="page-header__logo-image" src="http://placehold.it/86x35" width="86" height="35" alt="Логотип магазина Мишка">
       </a>
-
-      <nav class="main-navigation">
-        <button class="main-navigation__toggle" type="button"></button>
-        <ul class="main-navigation__list site-navigation">
-          <li class="site-navigation__item">
-            <a href="#">Каталог товаров</a>
-          </li>
-          <li class="site-navigation__item">
-            <a href="#">Вязание на заказ</a>
-          </li>
-        </ul>
-        <a class="site-navigation__item" href="#">Поиск по сайту</a>
-        <ul class="main-navigation__list user-menu">
-          <li class="user-menu__item">
-            <a href="#">Корзина: пока пуста</a>
-          </li>
-        </ul>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-nav">
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="#">Каталог товаров</a>
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="#">Вязание на заказ</a>
+            </li>
+          </ul>
+          <ul class="main-nav__list user-nav">
+            <li class="user-nav__item">
+              <a class="user-nav__link" href="#">Поиск по сайту</a>
+            </li>
+            <li class="user-nav__item">
+              <a class="user-nav__link" href="#">Корзина: пока пуста</a>
+            </li>
+          </ul>
+        </div>
       </nav>
-
     </header>
 
     <main class="page-main">
-      <h1 class="page-header">Милые штуки ручной работы для дома</h1>
-      <ul class="categories-list">
-        <li class="categories-list__item">Предметы интерьера</li>
-        <li class="categories-list__item">Детские игрушки</li>
-      </ul>
+      <header class="page-header">
+        <h1 class="page-header__title">Милые штуки ручной работы для дома</h1>
+        <ul class="page-header__menu categories-list">
+          <li class="categories-list__item">Предметы интерьера</li>
+          <li class="categories-list__item">Детские игрушки</li>
+        </ul>
+      </header>
 
-      <section class="featured-products">
-        <h2 class="visually-hidden">Избранные товары</h2>
-        <h3 class="featured-products__title">Вязаные корзинки</h3>
-        <b class="featured-products__badge">Товар недели</b>
-        <p class="featured-products__decription">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
-        <table class="featured-products__chars">
+      <section class="featured-product">
+        <h2 class="featured-product__title">Товар недели</h2>
+        <h3 class="featured-product__product-title">Вязаные корзинки</h3>
+        <p class="featured-product__decription">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
+        <table class="featured-product__characteristics product-properties">
           <tr>
-            <td class="featured-products__property-name">Цвет</td>
-            <td class="featured-products__property-value"><«Тиффани»/серый</td>
+            <td class="product-properties__property-name">Цвет</td>
+            <td class="product-properties__property-value"><«Тиффани»/серый</td>
           </tr>
           <tr>
-            <td class="featured-products__property-name">Диаметр</td>
-            <td class="featured-products__property-value">25 см</td>
+            <td class="product-properties__property-name">Диаметр</td>
+            <td class="product-properties__property-value">25 см</td>
           </tr>
           <tr>
-            <td class="featured-products__property-name">Высота</td>
-            <td class="featured-products__property-value">15 см</td>
+            <td class="product-properties__property-name">Высота</td>
+            <td class="product-properties__property-value">15 см</td>
           </tr>
         </table>
         <img src="" width="260" height="315" alt="Вязаные корзинки">
-        <p class="featured-products__price">Цена: 990 руб.</p>
-        <a href="#">Заказать</a>
+        <p class="featured-product__price">Цена: 990 руб.</p>
+        <a class="featured-product__order button" href="#">Заказать</a>
       </section>
 
       <section class="about-us">
         <h2 class="about-us__header">Коротко о нас:</h2>
         <ul class="about-us__list">
-          <li class="about-us__item">Экологически чистые материалы</li>
-          <li class="about-us__item">Скандинавский стиль по российской цене</li>
-          <li class="about-us__item">Увеличивает лайки на фотографиях</li>
-          <li class="about-us__item">Связано вручную с любовью и умилением</li>
-          <li class="about-us__item">Поддержка отечественного производителя</li>
-          <li class="about-us__item">Поставляется в подарочной упаковке</li>
+          <li class="about-us__item about-us__item--materials">Экологически чистые материалы</li>
+          <li class="about-us__item about-us__item--style">Скандинавский стиль по российской цене</li>
+          <li class="about-us__item about-us__item--likes">Увеличивает лайки на фотографиях</li>
+          <li class="about-us__item about-us__item--handmade">Связано вручную с любовью и умилением</li>
+          <li class="about-us__item about-us__item--local">Поддержка отечественного производителя</li>
+          <li class="about-us__item about-us__item--present">Поставляется в подарочной упаковке</li>
         </ul>
       </section>
 
@@ -92,9 +95,9 @@
         <h2 class="contacts__title">Контакты</h2>
         <dl class="contacts__list">
           <dt class="contacts__name">e-mail:</dt>
-          <dd class="contacts__name"><a href="mailto:info@mimimishkashop.ru"></a>info@mimimishkashop.ru</dd>
+          <dd class="contacts__value"><a href="mailto:info@mimimishkashop.ru"></a>info@mimimishkashop.ru</dd>
           <dt class="contacts__name">адрес:</dt>
-          <dd class="contacts__name">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</dd>
+          <dd class="contacts__value">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</dd>
         </dl>
         <img class="contacts__map" src="" alt="Карта с локацией магазина">
         <a class="contacts__write button" href="#">Напишите нам</a>
@@ -103,7 +106,7 @@
     </main>
 
     <footer class="page-footer">
-      <ul class="social-list">
+      <ul class="social">
         <li class="social__item">
           <a class="social__link social__link--instagram" href="#">Instagram</a>
         </li>
@@ -114,9 +117,8 @@
           <a class="social__link social__link--twitter" href="#">Twitter</a>
         </li>
       </ul>
-      <div class="copyright">
-        <p class="copyright__text">Разработано <span class="copyright__author">Евгений Шадрин</span></p>
-      </div>
+        <p class="copyright">Разработано <span class="copyright__author">Евгений Шадрин</span>
+        </p>
     </footer>
 
   </body>

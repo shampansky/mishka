@@ -9,27 +9,29 @@
 
     <header class="page-header">
       <a class="page-header__logo" href="#">
-        <img class="page-header__logo-image" src="" width="86" height="35" alt="Логотип магазина Мишка">
+        <img class="page-header__logo-image" src="http://placehold.it/86x35" width="86" height="35" alt="Логотип магазина Мишка">
       </a>
-
-      <nav class="main-navigation">
-        <button class="main-navigation__toggle" type="button"></button>
-        <ul class="main-navigation__list site-navigation">
-          <li class="site-navigation__item">
-            <a href="#">Каталог товаров</a>
-          </li>
-          <li class="site-navigation__item">
-            <a href="#">Вязание на заказ</a>
-          </li>
-        </ul>
-        <a class="site-navigation__item" href="#">Поиск по сайту</a>
-        <ul class="main-navigation__list user-menu">
-          <li class="user-menu__item">
-            <a href="#">Корзина: пока пуста</a>
-          </li>
-        </ul>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-nav">
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="#">Каталог товаров</a>
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="#">Вязание на заказ</a>
+            </li>
+          </ul>
+          <ul class="main-nav__list user-nav">
+            <li class="user-nav__item">
+              <a class="user-nav__link" href="#">Поиск по сайту</a>
+            </li>
+            <li class="user-nav__item">
+              <a class="user-nav__link" href="#">Корзина: пока пуста</a>
+            </li>
+          </ul>
+        </div>
       </nav>
-
     </header>
 
     <main class="page-main">
@@ -78,7 +80,7 @@
 
 
     <footer class="page-footer">
-      <ul class="social-list">
+      <ul class="social">
         <li class="social__item">
           <a class="social__link social__link--instagram" href="#">Instagram</a>
         </li>
@@ -89,9 +91,8 @@
           <a class="social__link social__link--twitter" href="#">Twitter</a>
         </li>
       </ul>
-      <div class="copyright">
-        <p class="copyright__text">Разработано <span class="copyright__author">Евгений Шадрин</span></p>
-      </div>
+        <p class="copyright">Разработано <span class="copyright__author">Евгений Шадрин</span>
+        </p>
     </footer>
 
     </body>
