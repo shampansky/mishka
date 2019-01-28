@@ -1,0 +1,14 @@
+.main-nav {
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 700;
+
+  ul {
+    @include reset-list-style;
+  }
+
+  a {
+    color: #000000;
+    text-decoration: none;
+  }
+}

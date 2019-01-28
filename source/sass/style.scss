@@ -1,1 +1,10 @@
-body { background: blue; }
+@import "variables.scss";
+@import "fonts.scss";
+@import "global.scss";
+@import "mixins.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/site-nav.scss";
+@import "blocks/user-nav.scss";
+@import "blocks/page-header.scss";
+@import "blocks/categories-list.scss";
+@import "blocks/featured-product.scss";
