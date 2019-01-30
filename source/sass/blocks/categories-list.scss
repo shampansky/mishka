@@ -1,3 +1,7 @@
+.categories-list {
+  @include reset-list-style;
+}
+
 .categories-list__item {
   font-size: 19px;
   line-height: 24px;

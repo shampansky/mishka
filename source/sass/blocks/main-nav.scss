@@ -2,10 +2,10 @@
   font-size: 17px;
   line-height: 24px;
   font-weight: 700;
+}
 
-  ul {
-    @include reset-list-style;
-  }
+.main-nav__list {
+  @include reset-list-style;
 
   a {
     color: #000000;

@@ -1,3 +1,10 @@
+.featured-product__title {
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: 700;
+  color: #63d1bb;
+}
+
 .featured-product__product-title {
   font-size: 25px;
   line-height: 30px;
@@ -5,9 +12,11 @@
   color: #000000;
 }
 
-.featured-product__title {
-  font-size: 17px;
+.featured-product__characteristics {
   line-height: 20px;
-  font-weight: 700;
-  color: #63d1bb;
+}
+
+.featured-product__price {
+  font-size: 17px;
+  font-weight: bold;
 }

@@ -1,0 +1,19 @@
+.about-us {
+  &__header {
+    font-size: 25px;
+    line-height: 30px;
+    font-weight: 700;
+    color: #000000;
+  }
+
+  &__list {
+    @include reset-list-style;
+
+    li {
+      font-size: 17px;
+      line-height: 20px;
+      font-weight: 700;
+      color: #000000;
+    }
+  }
+}

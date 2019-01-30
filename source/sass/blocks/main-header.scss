@@ -1,10 +1,6 @@
-.page-header__title {
+.main-header__title {
   font-size: 27px;
   line-height: 30px;
   font-weight: 700;
   color: #010000;
-}
-
-.page-header__menu {
-  @include reset-list-style;
 }
