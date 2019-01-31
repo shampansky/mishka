@@ -3,6 +3,9 @@
   line-height: 20px;
   font-weight: 700;
   color: #63d1bb;
+
+  margin: 0;
+  margin-bottom: 25px;
 }
 
 .featured-product__product-title {
@@ -12,11 +15,39 @@
   color: #000000;
 }
 
+.featured-product__decription {
+  margin-bottom: 30px;
+}
+
 .featured-product__characteristics {
   line-height: 20px;
+
+  width: 100%;
+  margin-bottom: 30px;
+
+  border-collapse: collapse;
+}
+
+.featured-product__property-name {
+  padding: 10px 0;
+  border-bottom: 1px solid #ececec;
+  min-width: 100px;
+}
+
+.featured-product__property-value {
+  padding: 10px 0;
+  border-bottom: 1px solid #ececec;
+}
+
+.featured-product__image {
+  margin-bottom: 25px;
 }
 
 .featured-product__price {
   font-size: 17px;
   font-weight: bold;
+  text-align: center;
+
+  margin: 0;
+  margin-bottom: 25px;
 }

@@ -5,6 +5,7 @@ body {
   font-weight: 400;
   color: #444444;
 
+  margin: 0;
   background-color: #ffffff;
 }
 
@@ -15,4 +16,12 @@ body {
   color: #444444;
   text-decoration: none;
   text-transform: uppercase;
+  text-align: center;
+
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  padding: 15px;
+
+  border: 2px solid #444444;
 }
