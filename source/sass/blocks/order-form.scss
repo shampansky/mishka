@@ -1,0 +1,31 @@
+.order-form {
+  label {
+    font-size: 17px;
+    line-height: 18px;
+    font-weight: 700;
+    color: #000000;
+  }
+
+  textarea {
+    font-family: inherit;
+  }
+
+  input::placeholder,
+  textarea::placeholder {
+    font-size: 17px;
+    line-height: 18px;
+    color: rgba(68, 68, 68, 0.3);
+  }
+}
+
+.order-form__filter-name {
+  font-size: 17px;
+  line-height: 16px;
+  font-weight: 700;
+  color: #63d1bb;
+}
+
+.order-form__legend {
+  font-size: 14px;
+  line-height: 16px;
+}
