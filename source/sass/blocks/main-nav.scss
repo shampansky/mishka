@@ -8,9 +8,9 @@
   @include reset-list-style;
 
   a {
+    padding: 28px $mobile-padding;
+
     color: #000000;
     text-decoration: none;
-
-    padding: 28px $mobile-padding;
   }
 }

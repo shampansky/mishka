@@ -1,5 +1,11 @@
 .contacts {
+  &__wrapper {
+    padding: 0 $mobile-padding;
+  }
+
   &__title {
+    margin-bottom: 40px;
+
     font-size: 18px;
     line-height: 30px;
     font-weight: 700;
@@ -9,5 +15,14 @@
   &__data {
     font-size: 15px;
     line-height: 30px;
+  }
+
+  &__map {
+    display: block;
+    margin-bottom: 40px;
+  }
+
+  &__write {
+    margin-bottom: 40px;
   }
 }
