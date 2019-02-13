@@ -11,27 +11,39 @@
       <a class="page-header__logo" href="#">
         <img class="page-header__logo-image" src="http://placehold.it/86x35" width="86" height="35" alt="Логотип магазина Мишка">
       </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list main-nav__list--site-nav">
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="#">Каталог товаров</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="#">Вязание на заказ</a>
-            </li>
-          </ul>
-          <ul class="main-nav__list main-nav__list--user-nav">
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="#">Поиск по сайту</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="#">Корзина: пока пуста</a>
-            </li>
-          </ul>
-        </div>
+      <button class="main-nav__toggle" type="button">Открыть меню</button>
+      <nav class="site-nav">
+        <ul class="site-nav__list primary-nav">
+          <li class="primary-nav__item">
+            <a class="primary-nav__link" href="#">Каталог товаров</a>
+          </li>
+          <li class="primary-nav__item">
+            <a class="primary-nav__link" href="#">Вязание на заказ</a>
+          </li>
+        </ul>
+
+        <ul class="site-nav__list secondary-nav">
+          <li class="secondary-nav__item">
+            <a class="secondary-nav__link" href="#">Новые поступления</a>
+          </li>
+          <li class="secondary-nav__item">
+            <a class="secondary-nav__link" href="#">Распродажа</a>
+          </li>
+        </ul>
       </nav>
+
+      <nav class="user-nav">
+        <ul class="user-nav__list">
+          <li class="user-nav__item">
+            <a class="user-nav__link" href="#">Поиск по сайту</a>
+          </li>
+          <li class="user-nav__item">
+            <a class="user-nav__link" href="#">Корзина: пока пуста</a>
+          </li>
+        </ul>
+      </nav>
+
+      <span class="delivery-info">Бесплатная доставка по России</span>
     </header>
 
     <main class="page-main">
@@ -44,9 +56,16 @@
       </header>
 
       <section class="page-main__featured-product featured-product">
-        <h2 class="featured-product__title">Товар недели</h2>
-        <h3 class="featured-product__product-title">Вязаные корзинки</h3>
-        <p class="featured-product__decription">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
+        <div class="featured-product__header">
+          <h2 class="featured-product__title">Товар недели</h2>
+          <h3 class="featured-product__product-title">Вязаные корзинки</h3>
+        </div>
+
+        <div class="featured-product__description">
+
+        </div>
+
+        <p class="featured-product__intro">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
         <table class="featured-product__characteristics">
           <tr>
             <td class="featured-product__property-name">Цвет:</td>
@@ -80,7 +99,7 @@
 
       <section class="reviews">
         <h2 class="reviews__title">Отзывы</h2>
-        <blockquote>
+        <blockquote class="reviews__review-block">
           <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
           <cite class="reviews__author-name">Анастасия Красильникова</cite>
           <cite class="reviews__author-link">@misssssiskras</cite>
@@ -92,16 +111,17 @@
 
       <section class="contacts">
         <h2 class="contacts__title">Контакты</h2>
-        <table class="contacts__data">
-          <tr>
-            <td class="contacts__field">e-mail:</td>
-            <td class="contacts__value"><a href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a></td>
-          </tr>
-          <tr>
-            <td class="contacts__field">адрес:</td>
-            <td class="contacts__value">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</td>
-          </tr>
-        </table>
+
+          <address class="contacts__data">
+            <p>
+              <span>e-mail:</span><a href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
+            </p>
+            <p>
+              <span>адрес:</span>г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101
+            </p>
+
+          </address>
+
         <img class="contacts__map" src="http://placehold.it/320x457" alt="Карта с локацией магазина">
         <a class="contacts__write button" href="#">Напишите нам</a>
       </section>

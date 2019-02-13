@@ -1,4 +1,11 @@
+.featured-product__header {
+  display: flex;
+  flex-direction: column;
+}
+
 .featured-product__title {
+  order: 1;
+
   font-size: 17px;
   line-height: 20px;
   font-weight: 700;
@@ -15,7 +22,7 @@
   color: #000000;
 }
 
-.featured-product__decription {
+.featured-product__intro {
   margin-bottom: 30px;
 }
 

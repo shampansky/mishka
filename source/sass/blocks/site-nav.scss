@@ -1,16 +1,17 @@
-.main-nav {
+.site-nav {
   font-size: 17px;
   line-height: 24px;
   font-weight: 700;
 }
 
-.main-nav__list {
+.site-nav__list {
   @include reset-list-style;
 
   a {
+    display: block;
+    padding: 28px $mobile-padding;
+
     color: #000000;
     text-decoration: none;
-
-    padding: 28px $mobile-padding;
   }
 }
