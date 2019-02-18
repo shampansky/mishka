@@ -18,6 +18,14 @@
   }
 }
 
+.order-from__set-wrapper {
+
+}
+
+.order-form__filter-item-wrapper {
+  // display: flex;
+}
+
 .order-form__filter-name {
   font-size: 17px;
   line-height: 16px;
@@ -28,4 +36,25 @@
 .order-form__legend {
   font-size: 14px;
   line-height: 16px;
+}
+
+
+@media (min-width: $tablet-width) {
+  .order-form__filter-item-wrapper {
+    display: flex;
+  }
+
+  .order-form__filter-name {
+    width: 167px;
+  }
+
+  .order-form__final-step {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .order-form__send {
+    width: 230px;
+    order: -1;
+  }
 }

@@ -21,3 +21,14 @@
 .categories-list__item--toys {
   background-color: #56c3b2;
 }
+
+@media (min-width: $tablet-width) {
+  .categories-list {
+    flex-direction: row;
+  }
+
+  .categories-list__item {
+    width: 50%;
+
+  }
+}

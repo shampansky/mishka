@@ -6,44 +6,50 @@
     <title>HTML Academy: Мишка</title>
   </head>
   <body>
-
+  <div class="container">
     <header class="page-header">
-      <a class="page-header__logo" href="#">
-        <img class="page-header__logo-image" src="http://placehold.it/86x35" width="86" height="35" alt="Логотип магазина Мишка">
-      </a>
-      <button class="main-nav__toggle" type="button">Открыть меню</button>
-      <nav class="site-nav">
-        <ul class="site-nav__list primary-nav">
-          <li class="primary-nav__item">
-            <a class="primary-nav__link" href="#">Каталог товаров</a>
-          </li>
-          <li class="primary-nav__item">
-            <a class="primary-nav__link" href="#">Вязание на заказ</a>
-          </li>
-        </ul>
 
-        <ul class="site-nav__list secondary-nav">
-          <li class="secondary-nav__item">
-            <a class="secondary-nav__link" href="#">Новые поступления</a>
-          </li>
-          <li class="secondary-nav__item">
-            <a class="secondary-nav__link" href="#">Распродажа</a>
-          </li>
-        </ul>
-      </nav>
+        <a class="page-header__logo" href="#">
+          <img class="page-header__logo-image" src="http://placehold.it/86x35" width="86" height="35" alt="Логотип магазина Мишка">
+        </a>
 
-      <nav class="user-nav">
-        <ul class="user-nav__list">
-          <li class="user-nav__item">
-            <a class="user-nav__link" href="#">Поиск по сайту</a>
-          </li>
-          <li class="user-nav__item">
-            <a class="user-nav__link" href="#">Корзина: пока пуста</a>
-          </li>
-        </ul>
-      </nav>
+        <button class="page-header__toggle" type="button">Открыть меню</button>
+
+        <nav class="primary-nav">
+          <ul class="primary-nav__list">
+            <li class="primary-nav__item">
+              <a class="primary-nav__link" href="#">Каталог товаров</a>
+            </li>
+            <li class="primary-nav__item">
+              <a class="primary-nav__link" href="#">Вязание на заказ</a>
+            </li>
+          </ul>
+        </nav>
+
+        <nav class="user-nav">
+          <ul class="user-nav__list">
+            <li class="user-nav__item">
+              <a class="user-nav__link" href="#">Поиск по сайту</a>
+            </li>
+            <li class="user-nav__item">
+              <a class="user-nav__link" href="#">Корзина: пока пуста</a>
+            </li>
+          </ul>
+        </nav>
+
+        <nav class="secondary-nav">
+          <ul class="secondary-nav__list">
+            <li class="secondary-nav__item">
+              <a class="secondary-nav__link" href="#">Новые поступления</a>
+            </li>
+            <li class="secondary-nav__item">
+              <a class="secondary-nav__link" href="#">Распродажа</a>
+            </li>
+          </ul>
+        </nav>
 
       <span class="delivery-info">Бесплатная доставка по России</span>
+
     </header>
 
     <main class="page-main">
@@ -56,44 +62,58 @@
       </header>
 
       <section class="page-main__featured-product featured-product">
+
         <div class="featured-product__header">
           <h2 class="featured-product__title">Товар недели</h2>
           <h3 class="featured-product__product-title">Вязаные корзинки</h3>
         </div>
 
-        <div class="featured-product__description">
+        <div class="featured-product__wrapper">
+          <div class="featured-product__description-block">
+            <p class="featured-product__intro">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
+            <table class="featured-product__characteristics">
+              <tr>
+                <td class="featured-product__property-name">Цвет:</td>
+                <td class="featured-product__property-value">«Тиффани»/серый</td>
+              </tr>
+              <tr>
+                <td class="featured-product__property-name">Диаметр:</td>
+                <td class="featured-product__property-value">25 см</td>
+              </tr>
+              <tr>
+                <td class="featured-product__property-name">Высота:</td>
+                <td class="featured-product__property-value">15 см</td>
+              </tr>
+            </table>
+          </div>
+
+          <img class="featured-product__image" src="http://placehold.it/260x315" width="260" height="315" alt="Вязаные корзинки">
+
+          <div class="featured-product__order-block">
+            <p class="featured-product__price">Цена: 990 руб.</p>
+            <a class="featured-product__order-button button" href="#">Заказать</a>
+          </div>
 
         </div>
 
-        <p class="featured-product__intro">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
-        <table class="featured-product__characteristics">
-          <tr>
-            <td class="featured-product__property-name">Цвет:</td>
-            <td class="featured-product__property-value">«Тиффани»/серый</td>
-          </tr>
-          <tr>
-            <td class="featured-product__property-name">Диаметр:</td>
-            <td class="featured-product__property-value">25 см</td>
-          </tr>
-          <tr>
-            <td class="featured-product__property-name">Высота:</td>
-            <td class="featured-product__property-value">15 см</td>
-          </tr>
-        </table>
-        <img class="featured-product__image" src="http://placehold.it/260x315" width="260" height="315" alt="Вязаные корзинки">
-        <p class="featured-product__price">Цена: 990 руб.</p>
-        <a class="featured-product__order button" href="#">Заказать</a>
+
+
       </section>
 
       <section class="page-main__about-us about-us">
         <h2 class="about-us__header">Коротко о нас:</h2>
         <ul class="about-us__list">
-          <li class="about-us__item about-us__item--materials">Экологически<br> чистые материалы</li>
-          <li class="about-us__item about-us__item--style">Скандинавский стиль<br> по российской цене</li>
-          <li class="about-us__item about-us__item--likes">Увеличивает лайки<br> на фотографиях</li>
-          <li class="about-us__item about-us__item--handmade">Связано вручную с<br> любовью и умилением</li>
-          <li class="about-us__item about-us__item--local">Поддержка отечественного<br> производителя</li>
-          <li class="about-us__item about-us__item--present">Поставляется в<br> подарочной упаковке</li>
+
+          <div class="about-us__wrapper">
+            <li class="about-us__item about-us__item--materials">Экологически<br> чистые материалы</li>
+            <li class="about-us__item about-us__item--style">Скандинавский стиль<br> по российской цене</li>
+            <li class="about-us__item about-us__item--likes">Увеличивает лайки<br> на фотографиях</li>
+          </div>
+          <div class="about-us__wrapper">
+            <li class="about-us__item about-us__item--handmade">Связано вручную с<br> любовью и умилением</li>
+            <li class="about-us__item about-us__item--local">Поддержка отечественного<br> производителя</li>
+            <li class="about-us__item about-us__item--present">Поставляется в<br> подарочной упаковке</li>
+          </div>
         </ul>
       </section>
 
@@ -104,8 +124,10 @@
           <cite class="reviews__author-name">Анастасия Красильникова</cite>
           <cite class="reviews__author-link">@misssssiskras</cite>
         </blockquote>
-        <button class="reviews__prev" type="button">Предыдущий отзыв</button>
-        <button class="reviews__next" type="button">Следующий отзыв</button>
+        <div class="reviews__nav">
+          <button class="reviews__prev" type="button">Предыдущий отзыв</button>
+          <button class="reviews__next" type="button">Следующий отзыв</button>
+        </div>
         <a class="reviews__write button" href="#">Написать</a>
       </section>
 
@@ -128,21 +150,26 @@
       </section>
 
     </main>
-
+  </div>
     <footer class="page-footer">
-      <ul class="page-footer__social social">
-        <li class="social__item">
-          <a class="social__link social__link--instagram" href="#">Instagram</a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--facebook" href="#">Facebook</a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--twitter" href="#">Twitter</a>
-        </li>
-      </ul>
-        <p class="copyright">Разработано <span class="copyright__author">Евгений Шадрин</span>
-        </p>
+      <div class="container page-footer__wrapper">
+        <a class="page-footer__logo" href="#">
+          <img class="page-footer__logo-image" src="http://placehold.it/102x34" width="102" height="34" alt="Логотип магазина Мишка">
+        </a>
+        <ul class="page-footer__social social">
+          <li class="social__item">
+            <a class="social__link social__link--instagram" href="#">Instagram</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="#">Facebook</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--twitter" href="#">Twitter</a>
+          </li>
+        </ul>
+          <p class="copyright">Разработано <span class="copyright__author">Евгений Шадрин</span>
+          </p>
+      </div>
     </footer>
 
   </body>
