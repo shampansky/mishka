@@ -1,0 +1,30 @@
+.primary-nav {
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.primary-nav__list {
+  @include reset-list-style;
+
+  a {
+    display: block;
+    padding: 28px $mobile-padding;
+
+    color: #000000;
+    text-decoration: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .primary-nav__list {
+    display: flex;
+
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .primary-nav {
+    order: -1;
+  }
+}

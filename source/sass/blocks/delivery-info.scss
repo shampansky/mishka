@@ -1,3 +1,9 @@
 .delivery-info {
   display: none;
 }
+
+@media (min-width: $tablet-width) {
+  .delivery-info {
+    display: block;
+  }
+}

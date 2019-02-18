@@ -1,4 +1,6 @@
 .reviews {
+  position: relative;
+
   padding: 0 $mobile-padding;
 }
 
@@ -18,6 +20,8 @@
 }
 
 .reviews__author-name {
+  display: block;
+
   font-size: 17px;
   font-style: normal;
   font-weight: bold;
@@ -25,7 +29,25 @@
   }
 
 .reviews__author-link {
+  display: block;
+
   font-size: 17px;
   line-height: 30px;
   font-style: normal;
+}
+
+@media (min-width: $tablet-width) {
+  .reviews__nav {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+
+  .reviews__write {
+    position: absolute;
+    right: 0;
+    top: 0;
+
+    width: 200px;
+  }
 }
