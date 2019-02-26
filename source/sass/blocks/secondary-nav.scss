@@ -24,4 +24,22 @@
   .secondary-nav {
     display: block;
   }
+
+  .secondary-nav__list {
+    height: 75px;
+
+    a {
+      padding: 0;
+    }
+  }
+
+  .secondary-nav__item {
+    display: flex;
+    align-items: center;
+
+
+    a {
+      padding-right: 60px;
+    }
+  }
 }

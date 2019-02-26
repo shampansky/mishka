@@ -4,6 +4,7 @@
 
 @media (min-width: $tablet-width) {
   .delivery-info {
-    display: block;
+    display: flex;
+    align-items: center;
   }
 }
