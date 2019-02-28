@@ -1,4 +1,11 @@
+.production {
+  display: flex;
+  flex-direction: column;
+}
+
 .production__title {
+  order: -1;
+
   font-size: 17px;
   font-weight: 700;
   color: #000000;
@@ -6,4 +13,38 @@
 
 .production__text {
   font-size: 13px;
+}
+
+@media (min-width: $tablet-width) {
+  .production__title {
+    order: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .production {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: flex-start;
+    height: 455px;
+  }
+
+  .production__video {
+    height: 455px;
+    width: 682px;
+  }
+
+  .production__order {
+    width: auto;
+  }
+
+  .production__title {
+    max-width: 230px;
+
+    font-size: 20px;
+  }
+
+  .production__text {
+    max-width: 230px;
+  }
 }

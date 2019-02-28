@@ -2,96 +2,138 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
     <title>Мишка | форма заказа</title>
   </head>
   <body>
-
+  <div class="container">
     <header class="page-header">
-      <a class="page-header__logo" href="#">
-        <img class="page-header__logo-image" src="http://placehold.it/86x35" width="86" height="35" alt="Логотип магазина Мишка">
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list main-nav__list--site-nav">
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="#">Каталог товаров</a>
+
+        <a class="page-header__logo" href="#">
+          <img class="page-header__logo-image" src="http://placehold.it/86x35" width="86" height="35" alt="Логотип магазина Мишка">
+        </a>
+
+        <button class="page-header__toggle" type="button">Открыть меню</button>
+
+        <nav class="primary-nav">
+          <ul class="primary-nav__list">
+            <li class="primary-nav__item">
+              <a class="primary-nav__link" href="#">Каталог товаров</a>
             </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="#">Вязание на заказ</a>
-            </li>
-          </ul>
-          <ul class="main-nav__list main-nav__list--user-nav">
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="#">Поиск по сайту</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="#">Корзина: пока пуста</a>
+            <li class="primary-nav__item">
+              <a class="primary-nav__link" href="#">Вязание на заказ</a>
             </li>
           </ul>
-        </div>
-      </nav>
+        </nav>
+
+        <nav class="user-nav">
+          <ul class="user-nav__list">
+            <li class="user-nav__item">
+              <a class="user-nav__link" href="#">Поиск по сайту</a>
+            </li>
+            <li class="user-nav__item">
+              <a class="user-nav__link" href="#">Корзина: пока пуста</a>
+            </li>
+          </ul>
+        </nav>
+
+        <nav class="secondary-nav">
+          <ul class="secondary-nav__list">
+            <li class="secondary-nav__item">
+              <a class="secondary-nav__link" href="#">Новые поступления</a>
+            </li>
+            <li class="secondary-nav__item">
+              <a class="secondary-nav__link" href="#">Распродажа</a>
+            </li>
+          </ul>
+        </nav>
+
+      <span class="delivery-info">Бесплатная доставка по России</span>
+
     </header>
 
     <main class="page-main">
       <article class="catalog">
         <h1 class="page-title">Каталог товаров</h1>
         <ul class="catalog__list">
+
           <li class="catalog__item catalog-item">
             <img src="http://placehold.it/260x195" width="260" height="195" alt="Зайчик-попрыгайчик">
             <section class="catalog-item__description">
-              <h2 class="catalog-item__title">Зайчик-попрыгайчик</h2>
-              <p class="catalog-item__properties">Рост 30 см, вес 200 г</p>
-              <b class="catalog-item__price">1 200 руб.</b>
-              <a class="catalog-item__add-to-cart" href="#">В корзину</a>
+              <div class="catalog-item__top-wrapper">
+                <h2 class="catalog-item__title">Зайчик-попрыгайчик</h2>
+                <p class="catalog-item__properties">Рост 30 см, вес 200 г</p>
+              </div>
+              <div class="catalog-item__bottom-wrapper">
+                <b class="catalog-item__price">1 200 руб.</b>
+                <a class="catalog-item__add-to-cart" href="#">В корзину</a>
+              </div>
+
             </section>
           </li>
+
           <li class="catalog__item catalog-item">
             <img src="http://placehold.it/260x195" width="260" height="195" alt="Корзинка для белья">
             <section class="catalog-item__description">
-              <h2 class="catalog-item__title">Корзинка для белья</h2>
-              <p class="catalog-item__properties">Диаметр 15 см, высота 10 см</p>
-              <b class="catalog-item__price">690 руб.</b>
-              <a class="catalog-item__add-to-cart" href="#">В корзину</a>
+              <div class="catalog-item__top-wrapper">
+                <h2 class="catalog-item__title">Корзинка для белья</h2>
+                <p class="catalog-item__properties">Диаметр 15 см, высота 10 см</p>
+              </div>
+              <div class="catalog-item__bottom-wrapper">
+                <b class="catalog-item__price">690 руб.</b>
+                <a class="catalog-item__add-to-cart" href="#">В корзину</a>
+              </div>
             </section>
           </li>
+
           <li class="catalog__item catalog-item">
             <img src="http://placehold.it/260x195" width="260" height="195" alt="Большая корзинка для игрушек">
             <section class="catalog-item__description">
-              <h2 class="catalog-item__title">Большая корзинка для игрушек</h2>
-              <p class="catalog-item__properties">Диаметр 30 см, высота 30 см</p>
-              <b class="catalog-item__price">1 500 руб.</b>
-              <a class="catalog-item__add-to-cart" href="#">В корзину</a>
+              <div class="catalog-item__top-wrapper">
+                <h2 class="catalog-item__title">Большая корзинка для игрушек</h2>
+                <p class="catalog-item__properties">Диаметр 30 см, высота 30 см</p>
+              </div>
+              <div class="catalog-item__bottom-wrapper">
+                <b class="catalog-item__price">1 500 руб.</b>
+                <a class="catalog-item__add-to-cart" href="#">В корзину</a>
+              </div>
             </section>
           </li>
+
         </ul>
 
       <section class="production">
+        <img class="production__video" src="http://placehold.it/260x195" width="260" height="195" alt="Процесс производства">
         <h2 class="production__title">Процесс производства</h2>
-        <img src="http://placehold.it/260x195" width="260" height="195" alt="Процесс производства">
-        <p class="production__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
-        <a class="production__order button" href="#">Сделать заказ</a>
+        <p class="production__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары. По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+          <a class="production__order button" href="#">Сделать заказ</a>
+
       </section>
       </article>
 
     </main>
-
+  </div>
 
     <footer class="page-footer">
-      <ul class="page-footer__social social">
-        <li class="social__item">
-          <a class="social__link social__link--instagram" href="#">Instagram</a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--facebook" href="#">Facebook</a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--twitter" href="#">Twitter</a>
-        </li>
-      </ul>
-        <p class="copyright">Разработано <span class="copyright__author">Евгений Шадрин</span>
-        </p>
+      <div class="container page-footer__wrapper">
+        <a class="page-footer__logo" href="#">
+          <img class="page-footer__logo-image" src="http://placehold.it/102x34" width="102" height="34" alt="Логотип магазина Мишка">
+        </a>
+        <ul class="page-footer__social social">
+          <li class="social__item">
+            <a class="social__link social__link--instagram" href="#">Instagram</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="#">Facebook</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--twitter" href="#">Twitter</a>
+          </li>
+        </ul>
+          <p class="copyright">Разработано <span class="copyright__author">Евгений Шадрин</span>
+          </p>
+      </div>
     </footer>
 
     </body>

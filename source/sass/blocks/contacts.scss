@@ -15,6 +15,25 @@
   &__data {
     font-size: 15px;
     line-height: 30px;
+    font-style: normal;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts {
+    position: relative;
+
+    height: 460px;
+    padding-right: 525px;
+  }
+
+  .contacts__map {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    width: 525px;
+    height: 460px;
   }
 
   &__map {

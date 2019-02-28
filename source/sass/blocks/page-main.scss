@@ -6,3 +6,9 @@
 .page-main__about-us {
   padding: 0 $mobile-padding;
 }
+
+@media (min-width: $tablet-width) {
+  .page-main__featured-product {
+    padding: 0;
+  }
+}

@@ -1,8 +1,22 @@
+.main-header {
+  background-color: #fafafa;
+}
+
+.main-header__wrapper {
+  width: 1050px;
+  padding: 0 $desktop-padding;
+  margin: 0 auto;
+
+  border-top: 1px solid #e7e7e7;
+}
+
 .main-header__title {
+  margin: 0;
   padding: 75px $mobile-padding 120px $mobile-padding;
 
   font-size: 27px;
   line-height: 30px;
   font-weight: 700;
   color: #010000;
+  text-align: center;
 }

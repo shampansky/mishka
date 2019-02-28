@@ -1,0 +1,45 @@
+.secondary-nav {
+  display: none;
+
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.secondary-nav__list {
+  @include reset-list-style;
+
+  display: flex;
+
+  a {
+    display: block;
+    padding: 28px $mobile-padding;
+
+    color: #000000;
+    text-decoration: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .secondary-nav {
+    display: block;
+  }
+
+  .secondary-nav__list {
+    height: 75px;
+
+    a {
+      padding: 0;
+    }
+  }
+
+  .secondary-nav__item {
+    display: flex;
+    align-items: center;
+
+
+    a {
+      padding-right: 60px;
+    }
+  }
+}
