@@ -7,16 +7,16 @@
   font-size: 17px;
   font-weight: 700;
   color: #000000;
-}
 
-.catalog-item__properties {
-  font-size: 13px;
-  line-height: 30px;
-}
+  &__properties {
+    font-size: 13px;
+    line-height: 30px;
+  }
 
-.catalog-item__price {
-  font-weight: 700;
-  color: #000000;
+  &__price {
+    font-weight: 700;
+    color: #000000;
+  }
 }
 
 .catalog-item__description {

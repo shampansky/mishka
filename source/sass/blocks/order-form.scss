@@ -16,7 +16,6 @@
     line-height: 18px;
     color: rgba(68, 68, 68, 0.3);
   }
-}
 
 .order-from__set-wrapper {
 
@@ -33,9 +32,10 @@
   color: #63d1bb;
 }
 
-.order-form__legend {
-  font-size: 14px;
-  line-height: 16px;
+  &__legend {
+    font-size: 14px;
+    line-height: 16px;
+  }
 }
 
 
