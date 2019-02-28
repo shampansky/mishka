@@ -8,12 +8,12 @@
   margin: 0;
 }
 
-.reviews__title {
+.reviews {
   font-size: 25px;
   line-height: 30px;
   font-weight: 700;
   color: #000000;
-}
+
 
   &__title {
     margin: 0;
@@ -32,6 +32,8 @@
 
   &__controls {
     margin-bottom: 40px;
+  }
+
   }
 
 .reviews__author-name {
