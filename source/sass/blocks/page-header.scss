@@ -1,13 +1,12 @@
 .page-header {
-  // display: flex;
-  // flex-direction: column;
+  width: 320px;
+  margin: 0 auto;
 }
 
 .page-header__wrapper {
   display: flex;
   flex-direction: column;
-  width: 260px;
-  margin: 0 auto;
+
 }
 
 .page-header__logo {
@@ -29,6 +28,7 @@
 
 @media (min-width: $tablet-width) {
   .page-header {
+    width: $tablet-width;
     margin-bottom: -75px;
   }
 
@@ -36,7 +36,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 668px;
+
     padding: 0 50px;
   }
 
@@ -57,8 +57,12 @@
 }
 
 @media (min-width: $desktop-width) {
+  .page-header {
+    width: $desktop-width;
+  }
+
   .page-header__wrapper {
-    width: 1050px;
+
   }
 
   .page-header__logo {

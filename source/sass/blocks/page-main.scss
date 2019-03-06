@@ -1,6 +1,5 @@
 .page-main__featured-product {
-  padding: 0 $mobile-padding;
-  margin-bottom: 35px;
+
 }
 
 .page-main__about-us {
@@ -9,6 +8,8 @@
 
 @media (min-width: $tablet-width) {
   .page-main__featured-product {
-    padding: 0;
+
   }
+
+
 }

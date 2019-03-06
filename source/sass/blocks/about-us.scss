@@ -1,5 +1,9 @@
 .about-us {
+  width: $mobile-width;
+  padding: 0 $mobile-padding;
+  margin: 0 auto;
   margin-bottom: 65px;
+  box-sizing: border-box;
 
   &__header {
     margin-bottom: 30px;
@@ -15,7 +19,7 @@
 
     li {
       margin-bottom: 30px;
-      
+
       font-size: 17px;
       line-height: 20px;
       font-weight: 700;
@@ -24,9 +28,110 @@
   }
 }
 
+.about-us__item {
+  position: relative;
+
+  padding-top: 55px;
+}
+
+.about-us__item::before {
+  content: "";
+
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.about-us__item--materials::before {
+  width: 32px;
+  height: 37px;
+
+  background-image: url(../img/icon-feature-flower.svg);
+}
+
+.about-us__item--style::before {
+  width: 46px;
+  height: 27px;
+
+  background-image: url(../img/icon-feature-money.svg);
+}
+
+.about-us__item--likes::before {
+  width: 33px;
+  height: 28px;
+
+  background-image: url(../img/icon-feature-heart.svg);
+}
+
+.about-us__item--handmade::before {
+  width: 34px;
+  height: 34px;
+
+  background-image: url(../img/icon-feature-ball.svg);
+}
+
+.about-us__item--local::before {
+  width: 54px;
+  height: 23px;
+
+  background-image: url(../img/icon-feature-rocket.svg);
+}
+
+.about-us__item--present::before {
+  width: 32px;
+  height: 32px;
+
+  background-image: url(../img/icon-feature-gift.svg);
+}
+
 @media (min-width: $tablet-width) {
+  .about-us {
+    width: $tablet-width;
+    padding: 0 $tablet-padding;
+  }
+
+  .about-us li {
+    margin-bottom: 60px;
+  }
+
+  .about-us__header {
+    margin-bottom: 50px;
+
+    font-size: 43px;
+    line-height: 50px;
+
+  }
+
   .about-us__list {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
+
   }
+
+  .about-us__wrapper {
+    width: 50%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .about-us {
+    width: $desktop-width;
+    padding: 0 $desktop-padding;
+  }
+
+  .about-us__header {
+    margin-left: 175px;
+
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .about-us__list {
+    margin-left: 175px;
+  }
+
+  .about-us__wrapper {
+    width: 350px;
+  }
+
 }
