@@ -1,5 +1,15 @@
 .social {
   @include reset-list-style;
   display: flex;
+  padding: 25px 0 28px 0;
+}
 
+.social__link {
+  padding: 0 20px;
+}
+
+@media (min-width: $tablet-width){
+  .social {
+    padding: 0;
+  }
 }
