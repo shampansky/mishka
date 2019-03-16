@@ -17,17 +17,18 @@
 }
 
 .page-footer__social {
+  margin: 0;
   border-bottom: 1px solid #e5e5e5;
 }
 
 @media (min-width: $tablet-width) {
   .page-footer {
-    padding: 50px 0;
+    padding: 52px 0 58px;
   }
 
   .page-footer__wrapper {
     flex-direction: row;
-    justify-content: space-between;
+    align-items: flex-end;
   }
 
   .page-footer__logo {
@@ -35,6 +36,17 @@
   }
 
   .page-footer__social {
+    margin-left: 140px;
     border-bottom: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer {
+    padding: 50px 0 60px;
+  }
+
+  .page-footer__social {
+    margin-left: 330px;
   }
 }

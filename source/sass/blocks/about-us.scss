@@ -2,10 +2,11 @@
   width: $mobile-width;
   padding: 0 $mobile-padding;
   margin: 0 auto;
-  margin-bottom: 65px;
+  margin-bottom: 52px;
   box-sizing: border-box;
 
   &__header {
+    margin: 0;
     margin-bottom: 30px;
 
     font-size: 25px;
@@ -16,6 +17,7 @@
 
   &__list {
     @include reset-list-style;
+    margin: 0;
 
     li {
       margin-bottom: 30px;
@@ -31,7 +33,7 @@
 .about-us__item {
   position: relative;
 
-  padding-top: 55px;
+  padding-top: 54px;
 }
 
 .about-us__item::before {
@@ -88,14 +90,17 @@
   .about-us {
     width: $tablet-width;
     padding: 0 $tablet-padding;
+    margin-bottom: 26px;
   }
+
+
 
   .about-us li {
     margin-bottom: 60px;
   }
 
   .about-us__header {
-    margin-bottom: 50px;
+    margin-bottom: 47px;
 
     font-size: 43px;
     line-height: 50px;
@@ -104,8 +109,22 @@
 
   .about-us__list {
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: flex-start;
 
+    max-height: 500px;
+
+  }
+
+  .about-us__list li {
+    margin-bottom: 57px;
+    font-size: 20px;
+    line-height: 22px;
+  }
+
+  .about-us__item {
+    width: 334px;
   }
 
   .about-us__wrapper {
@@ -117,17 +136,24 @@
   .about-us {
     width: $desktop-width;
     padding: 0 $desktop-padding;
+    margin-bottom: 33px;
   }
 
   .about-us__header {
     margin-left: 175px;
+    margin-bottom: 50px;
 
     font-size: 53px;
     line-height: 57px;
   }
 
+  .about-us__item {
+    width: 350px;
+  }
+
   .about-us__list {
     margin-left: 175px;
+    align-content: flex-start;
   }
 
   .about-us__wrapper {

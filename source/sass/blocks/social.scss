@@ -1,7 +1,8 @@
 .social {
   @include reset-list-style;
   display: flex;
-  padding: 25px 0 28px 0;
+  align-items: flex-end;
+  padding: 23px 0;
 }
 
 .social__link {
@@ -11,5 +12,16 @@
 @media (min-width: $tablet-width){
   .social {
     padding: 0;
+
+
+    align-items: center;
+  }
+
+  .social__link {
+    display: table-cell;
+  }
+
+  .social__link svg {
+    vertical-align: bottom;
   }
 }

@@ -6,17 +6,25 @@
 
 .user-nav__list {
   @include reset-list-style;
+  margin: 0;
 
   a {
     display: block;
     padding: 27px 45px;
+    padding-right: 0;
 
     color: #000000;
     text-decoration: none;
     text-align: left;
 
-    border-bottom: 1px solid #ececec;
+
   }
+}
+
+.user-nav__item {
+  padding: 0 30px;
+
+  border-bottom: 1px solid #ececec;
 }
 
 .user-nav__item:last-child {
@@ -101,13 +109,25 @@
   .user-nav__item {
     display: flex;
     align-items: center;
+    padding: 0;
 
     border-left: 1px solid #ececec;
+    border-bottom: none;
   }
 }
 
 @media (min-width: $desktop-width) {
   .user-nav {
     order: 0;
+    width: 450px;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .user-nav__list {
+    a {
+
+      padding-left: 84px;
+
+    }
   }
 }

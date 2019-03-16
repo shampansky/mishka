@@ -6,28 +6,39 @@
 
 .primary-nav__list {
   @include reset-list-style;
+  margin: 0;
 
   a {
     display: block;
     padding: 27px 45px;
+    padding-right: 0;
 
     color: #000000;
     text-decoration: none;
     text-align: left;
 
-    border-bottom: 1px solid #ececec;
+
 
   }
 }
 
+.primary-nav__item {
+    padding: 0 30px;
+    border-bottom: 1px solid #ececec;
+}
+
+
+
 @media (min-width: $tablet-width) {
   .primary-nav__list {
     display: flex;
-    height: 75px;
+    height: 60px;
 
     a {
       padding: 0;
       padding-right: 37px;
+
+      font-size: 15px;
 
       border: none;
     }
@@ -36,6 +47,9 @@
   .primary-nav__item {
     display: flex;
     align-items: center;
+    padding: 0;
+
+    border-bottom: none;
 
   }
 }
@@ -43,6 +57,7 @@
 @media (min-width: $desktop-width) {
   .primary-nav {
     order: -1;
+    width: 450px;
   }
 
   .primary-nav__list {
@@ -51,6 +66,8 @@
     a {
       padding: 0;
       padding: 0 35px;
+
+      font-size: 17px;
 
       border: none;
     }

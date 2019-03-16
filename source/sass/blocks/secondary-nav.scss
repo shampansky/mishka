@@ -8,6 +8,7 @@
 
 .secondary-nav__list {
   @include reset-list-style;
+  margin: 0;
 
   display: flex;
 
@@ -26,7 +27,7 @@
   }
 
   .secondary-nav__list {
-    height: 75px;
+    height: 60px;
 
     a {
       padding: 0;

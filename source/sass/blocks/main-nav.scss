@@ -6,6 +6,7 @@
 
 .main-nav__list {
   @include reset-list-style;
+  margin: 0;
 
   a {
     padding: 28px $mobile-padding;

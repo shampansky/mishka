@@ -29,7 +29,7 @@
 @media (min-width: $tablet-width) {
   .page-header {
     width: $tablet-width;
-    margin-bottom: -75px;
+    margin-bottom: -60px;
   }
 
   .page-header__wrapper {
@@ -42,6 +42,8 @@
 
   .page-header__logo {
     order: -2;
+    display: flex;
+    align-items: center;
     height: 88px;
     padding: 0;
 
@@ -51,7 +53,6 @@
   .page-header__logo-image {
     width: 113px;
     height: 46px;
-    margin-top: 22px;
   }
 
 }
@@ -59,6 +60,7 @@
 @media (min-width: $desktop-width) {
   .page-header {
     width: $desktop-width;
+    margin-bottom: -60px;
   }
 
   .page-header__wrapper {
@@ -66,6 +68,13 @@
   }
 
   .page-header__logo {
+    display: flex;
+    align-items: center;
     order: 0;
+  }
+
+  .page-header__logo-image {
+    width: 149px;
+    height: 72px;
   }
 }
