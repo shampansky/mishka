@@ -23,12 +23,15 @@
 
 @media (min-width: $tablet-width) {
   .page-footer {
+    margin: 0 auto;
     padding: 52px 0 58px;
   }
 
   .page-footer__wrapper {
+    width: 668px;
     flex-direction: row;
     align-items: flex-end;
+    margin: 0 auto;
   }
 
   .page-footer__logo {
@@ -43,8 +46,16 @@
 
 @media (min-width: $desktop-width) {
   .page-footer {
+    box-sizing: border-box;
     padding: 50px 0 60px;
   }
+  .page-footer__wrapper {
+    width: 1050px;
+    flex-direction: row;
+    // padding: 0 50px;
+
+  }
+
 
   .page-footer__social {
     margin-left: 330px;

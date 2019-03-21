@@ -10,6 +10,15 @@ body {
   background-color: #ffffff;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+// *, *:before, *:after {
+//   box-sizing: border-box;
+// }
+
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {

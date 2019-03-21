@@ -17,8 +17,8 @@
     color: rgba(68, 68, 68, 0.3);
   }
 
-.order-from__set-wrapper {
-
+.order-form__wrapper {
+  position: relative;
 }
 
 .order-form__filter-item-wrapper {
@@ -38,14 +38,187 @@
   }
 }
 
+.order-form__filter-item {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 25px;
+  border: none;
+}
+
+.order-form__filter-item:last-of-type {
+  margin-bottom: 0;
+}
+
+.order-form__filter-name {
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.order-form__filter-name::after {
+  content: "";
+
+  position: absolute;
+  right: 0;
+  top: 50%;
+
+  width: 198px;
+  height: 1px;
+
+  background-color: #62d1ba;
+}
+
+
+.order-form__item {
+  margin-bottom: 15px;
+  padding-left: 63px;
+}
+
+.order-form__label {
+  position: relative;
+}
+
+.order-form__label--newline {
+  display: block;
+}
+
+.order-form__text {
+  width: 100%;
+  padding: 20px 0;
+  margin-bottom: 20px;
+
+  font-family: inherit;
+  font-size: 17px;
+  line-height: 18px;
+
+
+  border: none;
+  border-bottom: 2px solid #000000;
+}
+
+.order-form__text::placeholder {
+  color: red;
+}
+
+.order-form__textarea {
+  box-sizing: border-box;
+  padding: 19px 17px;
+
+  font-size: 17px;
+  line-height: 18px;
+
+  border: 2px solid #444444;
+}
+
+.order-form__legend {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.order-form__send {
+  margin-bottom: 20px;
+
+  background-color: #ffffff;
+}
+
+
+
+
+.order-form__radio + label::before {
+  content: "";
+
+  position: absolute;
+  left: -60px;
+  top: 6px;
+
+  width: 40px;
+  height: 40px;
+  box-sizing: border-box;
+
+  border: 2px solid #444444;
+  border-radius: 50%;
+}
+
+.order-form__radio:checked + label:after {
+  content: "";
+
+  position: absolute;
+  left: 0;
+  top: 0;
+
+  width: 16px;
+  height: 16px;
+
+  background-color: #62d1ba;
+  border-radius: 50%;
+}
+
+.order-form__checkbox + label::before {
+  content: "";
+
+  position: absolute;
+  left: -60px;
+  top: 6px;
+
+  width: 40px;
+  height: 40px;
+  box-sizing: border-box;
+
+  border: 2px solid #444444;
+}
+
+.order-form__checkbox:checked + label::after {
+  content: "";
+
+  position: absolute;
+  left: -60px;
+  top: 6px;
+
+  width: 22px;
+  height: 16px;
+
+  background-image: url("../img/icon-tick.svg");
+  background-size: contain;
+}
+
+.order-form__icon-phone {
+  position: absolute;
+
+  bottom: 0;
+  right: 0;
+
+  fill: #cccccc;
+}
+
+.order-form__icon-mail {
+  position: absolute;
+
+  bottom: 0;
+  right: 0;
+
+  fill: #cccccc;
+}
+
+
+.order-form__textarea {
+  width: 100%;
+}
+
 
 @media (min-width: $tablet-width) {
   .order-form__filter-item-wrapper {
     display: flex;
   }
 
+  .order-form__filter-item:nth-child(even) {
+    background-color: red;
+  }
+
   .order-form__filter-name {
     width: 167px;
+  }
+
+  .order-form__filter-name::after {
+    display: none;
   }
 
   .order-form__final-step {

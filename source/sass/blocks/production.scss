@@ -1,32 +1,120 @@
 .production {
+
+}
+
+.production__wrapper {
   display: flex;
   flex-direction: column;
+  margin-bottom: 58px;
+
+  border: 1px solid #ececec;
 }
 
 .production__title {
+  position: relative;
+
   order: -1;
+  margin: 0;
+  padding: 24px 28px 25px 90px;
 
   font-size: 17px;
   font-weight: 700;
   color: #000000;
 }
 
+.production__title::before {
+  content: "";
+
+  position: absolute;
+  left: 29px;
+  top: 30px;
+
+  width: 40px;
+  height: 32px;
+
+  background-image: url(../img/icon-video.svg);
+  background-repeat: no-repeat;
+  background-size: 40px 32px;
+
+
+
+
+}
+
 .production__text {
+  margin: 0;
+  padding: 0 34px 25px;
+
   font-size: 13px;
 }
 
+.production__video-wrapper {
+  position: relative;
+  margin-bottom: 28px;
+}
+
+.production__video {
+  display: block;
+}
+
+.production__play-button {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+
+  width: 101px;
+  height: 77px;
+
+  border: none;
+  background-image: url(../img/icon-play.svg);
+  background-color: transparent;
+
+  transform: translate(-50%,-50%);
+}
+
+.production__order {
+  margin: 0 34px 32px;
+  width: auto;
+}
+
 @media (min-width: $tablet-width) {
+
+  .production__wrapper {
+    margin-bottom: 63px;
+  }
   .production__title {
     order: 0;
+
+    padding: 10px 28px 25px 106px;
+
+    font-size: 20px;
   }
+
+  .production__title::before {
+    left: 37px;
+    top: 5px;
+  }
+
+  .production__text {
+    font-size: 15px;
+    line-height: 30px;
+
+    padding: 7px 40px 35px;
+  }
+
+  .production__order {
+    margin: 0 40px 45px;
+  }
+
 }
 
 @media (min-width: $desktop-width) {
-  .production {
+  .production__wrapper {
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start;
     align-content: flex-start;
     height: 455px;
+    margin-bottom: 107px;
   }
 
   .production__video {
@@ -39,12 +127,25 @@
   }
 
   .production__title {
-    max-width: 230px;
+    max-width: 366px;
+    padding: 98px 58px 32px 80px;
+    box-sizing: border-box;
 
-    font-size: 20px;
+  }
+
+  .production__title::before {
+    left: 76px;
+    top: 43px;
   }
 
   .production__text {
-    max-width: 230px;
+    max-width: 366px;
+    padding: 0px 58px 46px 80px;
+    box-sizing: border-box;
+  }
+
+  .production__order {
+    margin: 0 58px 0 80px;
+    box-sizing: border-box;
   }
 }

@@ -2,5 +2,30 @@
   font-size: 27px;
   line-height: 30px;
   font-weight: 700;
+  text-align: center;
   color: #000000;
+
+  padding: 73px 30px;
+  box-sizing: border-box;
+
+  border-top: 1px solid #dfdfdf;
+  background-color: #f1f1f1;
+}
+
+@media (min-width: $tablet-width) {
+  .page-title {
+    padding: 96px $tablet-padding 78px;
+
+    font-size: 43px;
+    line-height: 50px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-title {
+    padding: 93px $desktop-padding 104px;
+
+    font-size: 53px;
+    line-height: 57px;
+  }
 }
