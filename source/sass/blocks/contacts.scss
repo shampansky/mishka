@@ -70,6 +70,14 @@
   width: 183px;
 }
 
+.contacts__mail-link:hover {
+  color: #46c1ae;
+}
+
+.contacts__mail-link:active {
+  opacity: 0.3;
+}
+
 .contacts__map {
   display: block;
   width: 320px;
