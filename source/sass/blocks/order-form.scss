@@ -220,6 +220,8 @@
 
 .order-form textarea {
   font-family: inherit;
+  border-radius: 0;
+  // -webkit-appearance: none;
 }
 
 .order-form__legend {

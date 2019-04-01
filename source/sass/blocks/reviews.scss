@@ -24,7 +24,6 @@
   width: 320px;
   height: 6px;
 
-
   background-image: url(../img/bg-zigzag-line.svg);
   background-repeat: repeat-x;
   background-size: auto 6px;
@@ -116,6 +115,11 @@
     background-position: top left;
     background-repeat: no-repeat;
     background-size: auto;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url(../img/review@2x.jpg);
+      background-size: 350px auto;
+    }
     }
 
   .reviews::after {
