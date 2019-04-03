@@ -3,6 +3,8 @@
   font-size: 17px;
   line-height: 24px;
   font-weight: 700;
+
+  border-top: 1px solid #ececec;
 }
 
 .primary-nav__list {
@@ -36,6 +38,11 @@
 
 
 @media (min-width: $tablet-width) {
+  .primary-nav {
+
+    border-top: none;
+  }
+
   .primary-nav__list {
     display: flex;
     height: 60px;

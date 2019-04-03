@@ -1,19 +1,28 @@
 .page-header {
-  width: 320px;
-  margin: 0 auto;
+
 }
 
 .page-header__wrapper {
+  position: relative;
+
   display: flex;
   flex-direction: column;
+  width: $mobile-width;
+  margin: 0 auto;
+  box-sizing: border-box;
+
+  border-top: 1px solid #ececec;
+
 }
 
 .page-header__logo {
-  display: block;
+  display: inline-block;
+  width: 100px;
   padding: 22px 0;
+  margin: 0 auto;
 
-  border-top: 1px solid #ececec;
-  border-bottom: 1px solid #ececec;
+  // border-top: 1px solid #ececec;
+  // border-bottom: 1px solid #ececec;
 }
 
 .page-header__logo:hover {
@@ -30,29 +39,93 @@
 }
 
 .page-header__toggle {
-  display: none;
+  position: absolute;
+  top: 23px;
+  right: 50px;
+
+  display: block;
+  width: 35px;
+  height: 35px;
+
+  background-color: transparent;
+
+  border: none;
+  cursor: pointer;
+}
+
+.page-header--closed .page-header__toggle {
+  background-image: url(../img/icon-menu-open.svg);
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+
+.page-header--opened .page-header__toggle {
+  background-image: url(../img/icon-menu-close.svg);
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+
+
+
+@media (max-width: $mobile-width-only) {
+  .page-header--closed {
+    background-color: #ebebeb;
+  }
+
+  .page-header--closed .primary-nav__item {
+    display: none;
+  }
+
+  .page-header--closed .user-nav__item {
+    display: none;
+  }
+
+  .page-header--no-js {
+    background-color: #ffffff;
+  }
+
+  .page-header--no-js .page-header__toggle {
+    display: none;
+  }
+
+  .page-header--no-js .primary-nav__item {
+    display: block;
+  }
+
+  .page-header--no-js .user-nav__item {
+    display: block;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .page-header {
-    width: $tablet-width;
+
     margin-bottom: -60px;
   }
 
+  .page-header__toggle {
+    display: none;
+  }
+
   .page-header__wrapper {
+    width: $tablet-width;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
 
     padding: 0 50px;
+
+    border-top: none;
   }
 
   .page-header__logo {
     order: -2;
     display: flex;
     align-items: center;
+    width: auto;
     height: 88px;
     padding: 0;
+    margin: 0;
 
     border: 0;
   }
@@ -66,12 +139,12 @@
 
 @media (min-width: $desktop-width) {
   .page-header {
-    width: $desktop-width;
+
     margin-bottom: -60px;
   }
 
   .page-header__wrapper {
-
+    width: $desktop-width;
   }
 
   .page-header__logo {

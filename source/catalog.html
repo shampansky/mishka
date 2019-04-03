@@ -7,7 +7,7 @@
     <title>Мишка | форма заказа</title>
   </head>
   <body>
-    <header class="page-header">
+    <header class="page-header page-header--closed page-header--no-js">
       <div class="page-header__wrapper">
         <a class="page-header__logo" href="/">
           <picture>
@@ -17,7 +17,7 @@
           </picture>
         </a>
 
-        <button class="page-header__toggle" type="button">Открыть меню</button>
+        <button class="page-header__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
 
         <nav class="primary-nav">
           <ul class="primary-nav__list">
@@ -239,6 +239,24 @@
           </p>
       </div>
     </footer>
+
+    <script type="text/javascript">
+      var pageHeader = document.querySelector('.page-header');
+      var toggle = document.querySelector('.page-header__toggle');
+
+      pageHeader.classList.remove('page-header--no-js');
+
+      toggle.addEventListener('click', function() {
+        if (pageHeader.classList.contains('page-header--opened')) {
+          pageHeader.classList.remove('page-header--opened');
+          pageHeader.classList.add('page-header--closed');
+        } else {
+          pageHeader.classList.add('page-header--opened');
+          pageHeader.classList.remove('page-header--closed');
+        }
+
+      });
+    </script>
 
     </body>
     </html>
