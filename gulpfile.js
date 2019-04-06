@@ -12,6 +12,7 @@ var rename = require("gulp-rename");
 var svgstore = require("gulp-svgstore")
 var server = require("browser-sync").create();
 var del = require("del");
+var imagemin = require("gulp-imagemin");
 
 gulp.task("css", function () {
   return gulp.src("source/sass/style.scss")
@@ -48,7 +49,7 @@ gulp.task("html", function () {
 gulp.task("copy", function () {
   return gulp.src([
     "source/fonts/**/*.{woff, woff2}",
-    "source/img/**",
+    // "source/img/**",
     "source/js/**"
   ], {
     base: "source"
@@ -58,7 +59,17 @@ gulp.task("copy", function () {
 
 gulp.task("clean", function () {
   return del("build");
-})
+});
+
+gulp.task("images", function () {
+  return gulp.src("source/img/**/*.{png,jpg,svg}")
+    .pipe(imagemin([
+      imagemin.optipng({optimizationLevel: 3}),
+      imagemin.jpegtran({progressive: true}),
+      imagemin.svgo()
+    ]))
+    .pipe(gulp.dest("build/img"))
+});
 
 gulp.task("serve", function () {
   server.init({
@@ -73,4 +84,4 @@ gulp.task("serve", function () {
   gulp.watch("source/*.html").on("change", server.reload);
 });
 
-gulp.task("build", gulp.series("clean", "copy", "css", "sprite", "html"));
+gulp.task("build", gulp.series("clean", "copy", "css", "sprite", "images", "html"));
