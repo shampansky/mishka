@@ -33,6 +33,10 @@
   text-decoration: none;
 }
 
+.categories-list__item svg {
+  fill: #149080;
+}
+
 .categories-list__item:hover svg {
   opacity: 0.5;
 }
