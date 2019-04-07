@@ -265,6 +265,25 @@
       </div>
     </footer>
 
+    <section class="modal modal-cart">
+      <h3 class="modal__title">Добавить<br class="modal__line-break"> в корзину</h3>
+      <p class="modal__text">Выберите размер:</p>
+      <form class="modal__form" action="index.html" method="get">
+        <div class="modal__sizes-list">
+          <input class="modal__sizes-item visually-hidden" id="size-s" type="radio" name="size" value="s">
+          <label class="modal__sizes-label" for="size-s">s</label>
+          <input class="modal__sizes-item visually-hidden" id="size-m" type="radio" name="size" value="m">
+          <label class="modal__sizes-label" for="size-m">m</label>
+          <input class="modal__sizes-item visually-hidden" id="size-l" type="radio" name="size" value="l">
+          <label class="modal__sizes-label" for="size-l">l</label>
+        </div>
+        <input class="button modal__button" type="submit" name="" value="Добавить">
+      </form>
+    </section>
+    <div class="modal__overlay">
+
+    </div>
+
     <script type="text/javascript">
       var pageHeader = document.querySelector('.page-header');
       var toggle = document.querySelector('.page-header__toggle');
@@ -282,6 +301,7 @@
 
       });
     </script>
+
 
   </body>
 </html>
