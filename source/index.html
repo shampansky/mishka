@@ -265,7 +265,7 @@
       </div>
     </footer>
 
-    <section class="modal modal-cart">
+    <section class="modal modal--off">
       <h3 class="modal__title">Добавить<br class="modal__line-break"> в корзину</h3>
       <p class="modal__text">Выберите размер:</p>
       <form class="modal__form" action="index.html" method="get">
@@ -280,7 +280,7 @@
         <input class="button modal__button" type="submit" name="" value="Добавить">
       </form>
     </section>
-    <div class="modal__overlay">
+    <div class="modal__overlay modal__overlay--off">
 
     </div>
 
@@ -299,6 +299,23 @@
           pageHeader.classList.remove('page-header--closed');
         }
 
+      });
+    </script>
+
+    <script type="text/javascript">
+      var overlay = document.querySelector('.modal__overlay');
+      var modal = document.querySelector('.modal');
+      var featuredProductBtn = document.querySelector('.featured-product__order-button');
+
+      featuredProductBtn.addEventListener('click', function(evt) {
+        evt.preventDefault();
+        modal.classList.remove('modal--off');
+        overlay.classList.remove('modal__overlay--off');
+      });
+
+      overlay.addEventListener('click', function() {
+        modal.classList.add('modal--off');
+        overlay.classList.add('modal__overlay--off');
       });
     </script>
 
