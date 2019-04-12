@@ -5,11 +5,10 @@
 
 .catalog__list {
   @include reset-list-style;
-  margin: 0;
-  padding: 0 $mobile-padding;
-
   display: flex;
   flex-direction: column;
+  margin: 0;
+  padding: 0 $mobile-padding;
 }
 
 .catalog__page-title {
@@ -44,7 +43,6 @@
     width: $tablet-width;
     padding: 0 $tablet-padding;
   }
-
 }
 
 @media (min-width: $desktop-width) {
@@ -52,9 +50,9 @@
     width: $desktop-width;
   }
   .catalog__list {
-    padding: 0 $desktop-padding;
     flex-direction: row;
     justify-content: space-between;
+    padding: 0 $desktop-padding;
   }
 
   .catalog__page-title {
@@ -66,5 +64,4 @@
     padding: 0 $desktop-padding;
     box-sizing: border-box;
   }
-
 }

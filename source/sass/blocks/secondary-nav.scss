@@ -1,5 +1,6 @@
 .secondary-nav {
   z-index: 1;
+
   display: none;
 
   font-size: 15px;
@@ -9,8 +10,8 @@
 
 .secondary-nav__list {
   @include reset-list-style;
-  margin: 0;
   display: flex;
+  margin: 0;
 }
 
 .secondary-nav__list a {
@@ -37,19 +38,18 @@
 
   .secondary-nav__list {
     height: 60px;
+  }
 
-    a {
-      padding: 0;
-    }
+  .secondary-nav__list a {
+    padding: 0;
   }
 
   .secondary-nav__item {
     display: flex;
     align-items: center;
+  }
 
-
-    a {
-      padding-right: 60px;
-    }
+  .secondary-nav__item a {
+    padding-right: 60px;
   }
 }

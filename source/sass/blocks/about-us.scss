@@ -4,30 +4,30 @@
   margin: 0 auto;
   margin-bottom: 52px;
   box-sizing: border-box;
+}
 
-  &__header {
-    margin: 0;
-    margin-bottom: 30px;
+.about-us__list {
+  @include reset-list-style;
+  margin: 0;
+}
 
-    font-size: 25px;
-    line-height: 30px;
-    font-weight: 700;
-    color: #000000;
-  }
+.about-us__list li {
+  margin-bottom: 30px;
 
-  &__list {
-    @include reset-list-style;
-    margin: 0;
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: 700;
+  color: #000000;
+}
 
-    li {
-      margin-bottom: 30px;
+.about-us__header {
+  margin: 0;
+  margin-bottom: 30px;
 
-      font-size: 17px;
-      line-height: 20px;
-      font-weight: 700;
-      color: #000000;
-    }
-  }
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #000000;
 }
 
 .about-us__item {
@@ -93,8 +93,6 @@
     margin-bottom: 26px;
   }
 
-
-
   .about-us li {
     margin-bottom: 60px;
   }
@@ -104,7 +102,6 @@
 
     font-size: 43px;
     line-height: 50px;
-
   }
 
   .about-us__list {
@@ -112,13 +109,12 @@
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: flex-start;
-
     max-height: 500px;
-
   }
 
   .about-us__list li {
     margin-bottom: 57px;
+
     font-size: 20px;
     line-height: 22px;
   }
@@ -152,12 +148,11 @@
   }
 
   .about-us__list {
-    margin-left: 175px;
     align-content: flex-start;
+    margin-left: 175px;
   }
 
   .about-us__wrapper {
     width: 350px;
   }
-
 }

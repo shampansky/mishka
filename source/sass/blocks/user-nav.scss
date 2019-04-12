@@ -7,16 +7,16 @@
 .user-nav__list {
   @include reset-list-style;
   margin: 0;
+}
 
-  a {
-    display: block;
-    padding: 27px 45px;
-    padding-right: 0;
+.user-nav__list a {
+  display: block;
+  padding: 27px 45px;
+  padding-right: 0;
 
-    color: #000000;
-    text-decoration: none;
-    text-align: left;
-  }
+  color: #000000;
+  text-decoration: none;
+  text-align: left;
 }
 
 .user-nav__item {
@@ -26,9 +26,7 @@
 }
 
 .user-nav__item:last-child {
-
-    border-bottom: none;
-
+  border-bottom: none;
 }
 
 .user-nav__link svg {
@@ -52,13 +50,13 @@
 }
 
 .user-nav__link--cart svg {
-    position: absolute;
-    top: 30px;
-    left: 0px;
-    width: 20px;
-    height: 18px;
+  position: absolute;
+  top: 30px;
+  left: 0px;
 
-  }
+  width: 20px;
+  height: 18px;
+}
 
 .user-nav__link--search {
   position: relative;
@@ -66,10 +64,11 @@
 
 .user-nav__link--search svg {
   position: absolute;
-    top: 30px;
-    left: 0px;
-    width: 18px;
-    height: 18px;
+  top: 30px;
+  left: 0px;
+
+  width: 18px;
+  height: 18px;
 }
 
 @media (min-width: $tablet-width) {
@@ -80,13 +79,13 @@
   .user-nav__list {
     display: flex;
     height: 88px;
+  }
 
-    a {
-      padding: 0;
-      padding-left: 82px;
+  .user-nav__list a {
+    padding: 0;
+    padding-left: 82px;
 
-      border: none;
-    }
+    border: none;
   }
 
   .user-nav__link--cart svg {
@@ -99,10 +98,9 @@
   }
 
   .user-nav__link--search svg {
-      top: 3px;
-      left: 32px;
+    top: 3px;
+    left: 32px;
   }
-
 
   .user-nav__item {
     display: flex;
@@ -120,12 +118,5 @@
     width: 450px;
     display: flex;
     justify-content: flex-end;
-  }
-  .user-nav__list {
-    a {
-
-      // padding-left: 84px;
-
-    }
   }
 }

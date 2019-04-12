@@ -7,11 +7,11 @@
 .main-nav__list {
   @include reset-list-style;
   margin: 0;
+}
 
-  a {
-    padding: 28px $mobile-padding;
+.main-nav__list a {
+  padding: 28px $mobile-padding;
 
-    color: #000000;
-    text-decoration: none;
-  }
+  color: #000000;
+  text-decoration: none;
 }

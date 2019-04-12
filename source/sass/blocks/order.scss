@@ -1,15 +1,14 @@
 .order__wrapper {
   width: $mobile-width;
   margin: 0 auto;
-
 }
+
 .order__intro-text {
   margin: 23px 0;
   padding: 0 $mobile-padding;
 
   font-size: 13px;
 }
-
 
 @media (min-width: $tablet-width) {
   .order__wrapper {
@@ -34,6 +33,4 @@
   .order__intro-text {
     margin: 122px 175px 72px;
   }
-
-
 }

@@ -28,6 +28,7 @@
 
 .page-footer__social {
   margin: 0;
+
   border-bottom: 1px solid #e5e5e5;
 }
 
@@ -38,9 +39,9 @@
   }
 
   .page-footer__wrapper {
-    width: 668px;
     flex-direction: row;
     align-items: flex-end;
+    width: 668px;
     margin: 0 auto;
   }
 
@@ -50,6 +51,7 @@
 
   .page-footer__social {
     margin-left: 140px;
+
     border-bottom: none;
   }
 }
@@ -60,12 +62,9 @@
     padding: 38px 0 60px;
   }
   .page-footer__wrapper {
-    width: 1050px;
     flex-direction: row;
-    // padding: 0 50px;
-
+    width: 1050px;
   }
-
 
   .page-footer__social {
     margin-left: 330px;

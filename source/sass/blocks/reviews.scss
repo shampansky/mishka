@@ -10,8 +10,6 @@
 
   font-size: 15px;
   line-height: 30px;
-
-  //background-size: 100%;
   }
 
 .reviews::after {
@@ -71,18 +69,16 @@
 .reviews__nav {
   display: flex;
   margin-bottom: 38px;
-
-  // border: 1px solid #ececec;
-  }
+}
 
 .reviews__button {
   position: relative;
 
   display: block;
-  margin: 0;
-  padding: 0;
   width: 50%;
   height: 52px;
+  margin: 0;
+  padding: 0;
 
   background-color: #ffffff;
   border: 1px solid #ececec;
@@ -120,7 +116,7 @@
       background-image: url(../img/review@2x.jpg);
       background-size: 350px auto;
     }
-    }
+  }
 
   .reviews::after {
     width: 768px;
@@ -135,7 +131,7 @@
 
     font-size: 43px;
     line-height: 50px;
-    }
+  }
 
   .reviews__text {
     margin-bottom: 56px;
@@ -185,6 +181,7 @@
     padding-right: $desktop-padding;
     padding-bottom: 184px;
     margin-bottom: 70px;
+
     background-position: left 50px top;
     }
 
@@ -208,9 +205,9 @@
     margin-right: 100px;
     }
 
-    .reviews__text {
-      margin-bottom: 37px;
-    }
+  .reviews__text {
+    margin-bottom: 37px;
+  }
 
   .reviews__author-name {
     margin-bottom: 5px;

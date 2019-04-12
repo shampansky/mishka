@@ -16,7 +16,6 @@
   width: $mobile-width;
   margin: 0 auto;
   box-sizing: border-box;
-
 }
 
 .main-header__title {
@@ -45,7 +44,7 @@
     width: $tablet-width;
     padding: 0 $tablet-padding;
 
-      border-top: 1px solid #e7e7e7;
+    border-top: 1px solid #e7e7e7;
   }
 
   .main-header__title {
@@ -57,7 +56,7 @@
   }
 
   .main-header__line-break {
-      display: none;
+    display: none;
   }
 }
 
@@ -80,6 +79,7 @@
 
     width: 100%;
     height: 37px;
+    
     background-image: url(../img/bg-zigzag-fill.svg);
     background-repeat: no-repeat;
     background-position: center bottom;
